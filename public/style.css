@@ -137,20 +137,6 @@ footer{
     height: 100%;
 }
 
-#footerul{
-    list-style-type:none;
-    display: flex;
-    flex: row;
-    justify-content: space-around;
-}
-
-
-.footer {
-    padding: 20px;
-    margin: 20px;
-    background-color: #94C973;
-    text-align: center;
-}
 
 a{
     margin: 25px;
@@ -161,7 +147,7 @@ a{
 @media only screen and (max-width: 800px){
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
         grid-template-areas:
         "one"
@@ -171,7 +157,7 @@ a{
         "four"
         "content3"
         "five"
-        "footer";
+        ;
 
 
         row-gap: 0.5rem ;
