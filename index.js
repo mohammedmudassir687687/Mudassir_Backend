@@ -7,7 +7,11 @@ const path = require('path')
 const PORT = process.env.PORT || 7000;
 
 const server = http.createServer(async (req, res) => {
-
+    res.setHeader(
+        "Access-Control-Allow-Origin",
+        "*"
+    );
+    
     if (req.url=='/api/students')
     {
         fs.readFile(
